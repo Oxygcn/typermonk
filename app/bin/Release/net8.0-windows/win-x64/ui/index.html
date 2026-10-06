@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'">
+<title>Панель автотайпера</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><div class="brand"><span class="mark">⌨</span><div><h1>Автотайпер</h1><p>Версия 0.3 · C++ · Interception · EN / RU</p></div></div><span class="badge" id="badge">ОЖИДАНИЕ</span></header>
+<section class="controls">
+<label>Базовый темп <span><input id="wpm" type="number" min="10" max="300" step="1" value="70"> WPM</span></label>
+<label>Вариативность <span><input id="variability" type="range" min="3" max="45" value="17"><output id="variation">17%</output></span></label>
+<div class="buttons"><button id="start" class="primary">▶ Запустить</button><button id="stop" disabled>■ Стоп</button><button id="reload">↻ Сайт</button><button id="logs">Журнал</button></div>
+</section>
+<footer><p id="status">Загрузка приложения…</p><div class="stats"><span><b id="count">0</b> символов</span><span><b id="actual">0</b> WPM факт.</span></div></footer>
+<div class="hint">F8: выбрать клавиатуру · Esc / F9: остановить · Раскладка EN-US / RU · Caps Lock выключен · Обход «Possible bot» не подтверждён</div>
+</main><script src="app.js"></script></body></html>

@@ -1,0 +1,4 @@
+engine.cpp
+native\engine.cpp(43): warning C4459: объявление "ctx" скрывает глобальное объявление
+native\engine.cpp(17): note:  см. объявление "ctx"
+   Создается библиотека build\typing_engine.lib и объект build\typing_engine.exp
